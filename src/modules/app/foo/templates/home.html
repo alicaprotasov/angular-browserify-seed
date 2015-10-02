@@ -1,0 +1,33 @@
+<!-- Header toolbar -->
+<md-fab-toolbar md-open="app.isOpen" count="app.count" ng-class="app.selectedAlignment" class="ng-isolate-scope md-fab-toolbar ng-animate md-left">
+  <md-fab-trigger class="align-with-text ng-scope">
+    <button class="md-fab md-primary md-button md-default-theme" aria-label="menu" tabindex="-1">
+      <md-icon md-svg-src="assets/img/menu55.svg" class="ng-scope ng-isolate-scope md-default-theme" aria-hidden="true" style="transition-delay: 0ms;"></md-icon>
+    </button>
+  </md-fab-trigger>
+  <md-toolbar>
+    <md-fab-actions class="md-toolbar-tools">
+      <a href="#" ui-sref="home.photos">
+        <md-button aria-label="home" class="">
+          Home
+        </md-button>
+      </a>
+      <md-button aria-label="google" class="md-icon-button">
+        <a href="http://google.com" target="_blank"><md-icon md-svg-src="assets/img/search116.svg"></md-icon></a>
+      </md-button>
+    </md-fab-actions>
+  </md-toolbar>
+</md-fab-toolbar>
+
+<!-- Loader  -->
+<div layout="row" layout-align="center center" ng-hide="loaded">
+  <md-progress-circular class="md-hue-2" md-mode="indeterminate"></md-progress-circular>
+</div>
+
+<!-- State view -->
+<div ui-view flex></div>
+
+<!-- Footer -->
+<md-toolbar>
+  <h3>Andriy, github: <a href="https://github.com/alicaprotasov/angular-browserify-seed">/alicaprotasov/angular-browserify-seed</a></h3>
+</md-toolbar>

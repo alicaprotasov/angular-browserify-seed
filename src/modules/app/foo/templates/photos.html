@@ -1,0 +1,13 @@
+<div scroller limit="limit" layout="row" layout-wrap ng-show="loaded">
+  <div flex="33" flex-md="50" flex-sm="100" ng-repeat="photo in photos | limitTo: limit">
+    <md-card>
+      <img ng-click="showImage(photo.id)" ng-src="{{photo.url}}" class="md-card-image image-show">
+      <md-card-content>
+        <h2 class="md-title">{{photo.title}}</h2>
+      </md-card-content>
+      <div class="md-actions" layout="row" layout-align="end center">
+        <md-button ng-click="goToAlbum(photo.albumId)" class="md-raised md-primary">{{'Album ' + photo.albumId}}</md-button>
+      </div>
+    </md-card>
+  </div>
+</div>

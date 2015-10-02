@@ -6,5 +6,6 @@ module.exports = /*ngInject*/
             HELLO: 'Hello {{value}}'
         });
 
+        $translateProvider.useSanitizeValueStrategy(null);
         $translateProvider.preferredLanguage('en');
     };

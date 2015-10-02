@@ -7,6 +7,7 @@ module.exports =
         'ngAria',
         'ngMaterial',
         'pascalprecht.translate',
+        'ui.router',
 
         // html templates in $templateCache
         require('../../../tmp/templates').name,

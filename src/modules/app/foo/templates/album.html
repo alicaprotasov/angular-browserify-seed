@@ -1,0 +1,13 @@
+<div layout="row" layout-wrap ng-show="loaded">
+  <md-toolbar>
+    <h2>{{'Album ' + albumNumber}}</h2>
+  </md-toolbar>
+  <div flex="33" flex-md="50" flex-sm="100" ng-repeat="photo in photos">
+    <md-card>
+      <img ng-click="showImage(photo.id)" ng-src="{{photo.url}}" class="md-card-image image-show" alt="">
+      <md-card-content>
+        <h2 class="md-title">{{photo.title}}</h2>
+      </md-card-content>
+    </md-card>
+  </div>
+</div>
